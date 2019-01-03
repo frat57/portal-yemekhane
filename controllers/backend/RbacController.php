@@ -1,7 +1,7 @@
 <?php
-namespace farukkkaradeniz\kalorimetre\controllers;
+namespace kouosl\yemekhane\controllers;
 use Yii;
-use farukkkaradeniz\kalorimetre\models\AuthItem;
+use kouosl\yemekhane\models\AuthItem;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -35,12 +35,12 @@ class RbacController extends Controller {
     public function actionCreate_role() {
         $auth = Yii::$app->authManager;
         // add "createPost" permission
-        $index = $auth->createPermission('admin/yemekler/index');
+        $index = $auth->createPermission('admin/foods/index');
         // add "updatePost" permission
-        $create = $auth->createPermission('admin/yemekler/create');
-        $view = $auth->createPermission('admin/yemekler/view');
-        $update = $auth->createPermission('admin/yemekler/update');
-        $delete = $auth->createPermission('admin/yemekler/delete');
+        $create = $auth->createPermission('admin/foods/create');
+        $view = $auth->createPermission('admin/foods/view');
+        $update = $auth->createPermission('admin/foods/update');
+        $delete = $auth->createPermission('admin/foods/delete');
         $author = $auth->createRole('author');
         $auth->add($author);
         $auth->addChild($author, $index);
@@ -55,20 +55,20 @@ class RbacController extends Controller {
     public function actionCreate_permission() {
         $auth = Yii::$app->authManager;
         // add "createPost" permission
-        $index = $auth->createPermission('admin/yemekler/index');
+        $index = $auth->createPermission('admin/foods/index');
         $index->description = 'Create a index';
         $auth->add($index);
         // add "updatePost" permission
-        $create = $auth->createPermission('admin/yemekler/create');
+        $create = $auth->createPermission('admin/foods/create');
         $create->description = 'create post';
         $auth->add($create);
-        $view = $auth->createPermission('admin/yemekler/view');
+        $view = $auth->createPermission('admin/foods/view');
         $view->description = 'view post';
         $auth->add($view);
-        $update = $auth->createPermission('admin/yemekler/update');
+        $update = $auth->createPermission('admin/foods/update');
         $update->description = 'Update post';
         $auth->add($update);
-        $delete = $auth->createPermission('admin/yemekler/delete');
+        $delete = $auth->createPermission('admin/foods/delete');
         $delete->description = 'delete post';
         $auth->add($delete);
     }
