@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 9a862a7c1f7669da7fc4dce797d0d6e53ef47555 vagrant <vagrant@kouosl> 1544658399 +0000	clone: from /home/vagrant/.cache/composer/vcs/https---github.com-frat57-portal-yemekhane.git/
+9a862a7c1f7669da7fc4dce797d0d6e53ef47555 9a862a7c1f7669da7fc4dce797d0d6e53ef47555 vagrant <vagrant@kouosl> 1544658400 +0000	checkout: moving from master to master
+9a862a7c1f7669da7fc4dce797d0d6e53ef47555 3385e70c90616859d65628f52d42f0de5a786f72 Hüseyin Firat <frat57571@hotmail.com> 1546479840 +0300	commit: update
+3385e70c90616859d65628f52d42f0de5a786f72 0aa7eb5c82c2c3d01cc2962768414c51772f2808 Hüseyin Firat <frat57571@hotmail.com> 1546480208 +0300	pull --no-rebase --progress origin: Merge made by the 'recursive' strategy.
+0aa7eb5c82c2c3d01cc2962768414c51772f2808 3385e70c90616859d65628f52d42f0de5a786f72 Hüseyin Firat <frat57571@hotmail.com> 1546480396 +0300	reset: moving to 3385e70c90616859d65628f52d42f0de5a786f72
+3385e70c90616859d65628f52d42f0de5a786f72 3385e70c90616859d65628f52d42f0de5a786f72 Hüseyin Firat <frat57571@hotmail.com> 1546481365 +0300	checkout: moving from master to NewBranch
+3385e70c90616859d65628f52d42f0de5a786f72 3385e70c90616859d65628f52d42f0de5a786f72 Hüseyin Firat <frat57571@hotmail.com> 1546481371 +0300	checkout: moving from NewBranch to master
