@@ -13,6 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 	 
 		<h1>Admin Paneli</h1>
 		<br/>
-        <p><a class="btn btn-lg btn-success" href="/yemekhane/user/create">Yemekhane Ayarlari</a>
+        <p><a class="btn btn-lg btn-success" href="yemekhane/foods">Yemekhane Ayarlari</a>
 		
 </div>
