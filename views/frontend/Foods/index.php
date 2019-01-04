@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'type',
             'calorie',
             'carbonhydrate',
-            //'protein',
+            'protein',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

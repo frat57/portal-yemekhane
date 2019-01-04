@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\models;
+namespace kouosl\yemekhane\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Listem;
+use kouosl\yemekhane\models\Listem;
 
 /**
  * ListemSearch represents the model behind the search form of `backend\models\Listem`.

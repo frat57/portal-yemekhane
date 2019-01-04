@@ -1,5 +1,5 @@
 <?php
-namespace farukkkaradeniz\kalorimetre\models;
+namespace kouosl\yemekhane\models;
 use Yii;
 /**
  * This is the model class for table "auth_item_child".

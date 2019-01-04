@@ -1,10 +1,12 @@
 <?php
 
-namespace kouosl\yemekhane\controllers;
+namespace kouosl\yemekhane\controllers\frontend;
 
 use Yii;
-use backend\models\Listem;
-use backend\models\ListemSearch;
+use kouosl\yemekhane\models\Listem;
+use kouosl\yemekhane\models\ListemSearch;
+use kouosl\yemekhane\models\Foods;
+use kouosl\yemekhane\models\FoodsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -108,7 +110,18 @@ class ListemController extends Controller
 
         return $this->redirect(['index']);
     }
-
+	/*
+	public function actionList($yemekName){
+	  $countkalori = Yemekler::find()->where(['kalori'=>$yemekName])->count();
+	   $countkarbonhidrat = Yemekler::find()->where(['carbonhydrate'=>$yemekName])->count();
+	    $countprotein = Yemekler::find()->where(['protein'=>$yemekName])->count();
+        if($countkalori > 0){
+                echo "<option value='".$toplam->kalori."'>".$toplam->kalori."</option>";
+				echo "<option value='".$toplam->carbonhydrate."'>".$toplam->carbonhydrate."</option>";
+				echo "<option value='".$toplam->protein."'>".$toplam->protein."</option>";
+        }else
+            echo "<option>-</option>";
+	}*/
     /**
      * Finds the Listem model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.

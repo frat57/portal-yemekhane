@@ -1,14 +1,11 @@
 <?php
-
-namespace backend\controllers;
-
+namespace kouosl\yemekhane\controllers\backend;
 use Yii;
-use backend\models\Foods;
-use backend\models\FoodsSearch;
+use kouosl\yemekhane\models\Foods;
+use kouosl\yemekhane\models\FoodsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
 /**
  * FoodsController implements the CRUD actions for Foods model.
  */
@@ -28,7 +25,16 @@ class FoodsController extends Controller
             ],
         ];
     }
-
+	
+    public function actionListeleme() {
+  
+        $searchModel = new FoodsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        return $this->render('listeleme', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
     /**
      * Lists all Foods models.
      * @return mixed
@@ -37,13 +43,11 @@ class FoodsController extends Controller
     {
         $searchModel = new FoodsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
-
     /**
      * Displays a single Foods model.
      * @param integer $id
@@ -56,7 +60,6 @@ class FoodsController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-
     /**
      * Creates a new Foods model.
      * If creation is successful, the browser will be redirected to the 'view' page.
@@ -65,16 +68,13 @@ class FoodsController extends Controller
     public function actionCreate()
     {
         $model = new Foods();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->food_id]);
         }
-
         return $this->render('create', [
             'model' => $model,
         ]);
     }
-
     /**
      * Updates an existing Foods model.
      * If update is successful, the browser will be redirected to the 'view' page.
@@ -85,16 +85,13 @@ class FoodsController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->food_id]);
         }
-
         return $this->render('update', [
             'model' => $model,
         ]);
     }
-
     /**
      * Deletes an existing Foods model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -105,10 +102,8 @@ class FoodsController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
-
     /**
      * Finds the Foods model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
@@ -121,7 +116,6 @@ class FoodsController extends Controller
         if (($model = Foods::findOne($id)) !== null) {
             return $model;
         }
-
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 }

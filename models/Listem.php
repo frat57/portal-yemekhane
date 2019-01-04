@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\models;
+namespace kouosl\yemekhane\models;
 
 use Yii;
 

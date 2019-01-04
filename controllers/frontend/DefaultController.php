@@ -7,8 +7,8 @@ use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use kouosl\yemekhane\models\foods;
-use kouosl\yemekhane\models\listem;
+use kouosl\yemekhane\models\Foods;
+use kouosl\yemekhane\models\Listem;
 use yii\web\UploadedFile;
 use yii\filters\Cors;
 

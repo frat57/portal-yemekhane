@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\controllers;
+namespace kouosl\yemekhane\controllers\frontend;
 
 use Yii;
-use backend\models\Foods;
-use backend\models\FoodsSearch;
+use kouosl\yemekhane\models\Foods;
+use kouosl\yemekhane\models\FoodsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -27,6 +27,20 @@ class FoodsController extends Controller
                 ],
             ],
         ];
+    }
+	public function actionUpgrade(){
+		$foodslist= \kouosl\yemekhane\foods::findBySql('select * from=foods')->all();
+	return $this->render('checkboxlist',['std'=>$foodslist]);
+	}
+	
+    public function actionListeleme() {
+  
+        $searchModel = new FoodsSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        return $this->render('listeleme', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     /**

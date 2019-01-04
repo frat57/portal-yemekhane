@@ -1,10 +1,10 @@
 <?php
 
-namespace backend\models;
+namespace  kouosl\yemekhane\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use backend\models\Foods;
+use kouosl\yemekhane\models\Foods;
 
 /**
  * FoodsSearch represents the model behind the search form of `backend\models\Foods`.
