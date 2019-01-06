@@ -1,24 +1,23 @@
-
 # portal-yemekhane
 
 ## [](https://github.com/frat57/portal-yemekhane#kurulum)Kurulum
 
 Yemekhane modülünü portal web uygulamasına eklemek için /portal dizinindeki composer.json dosyasına aşağıdaki eklemeleri yapmamız gerekmektedir.
 
-....
-"repositories": [
- {
- ....
- {
- "type": "vcs",
- "url": "https://github.com/frat57/portal-yemekhane.git"
- }
-],
-"require": {
- .... 
- "kouosl/portal-yemekhane": "dev-develop"
-},
-....
+    ....
+    "repositories": [
+     {
+     ....
+     {
+     "type": "vcs",
+     "url": "https://github.com/frat57/portal-yemekhane.git"
+     }
+    ],
+    "require": {
+     .... 
+     "kouosl/portal-yemekhane": "dev-develop"
+    },
+    ....
 
 portal-theme klasörünü de  [https://github.com/frat57/portal-theme.git](https://github.com/frat57/portal-theme.git)  linkindeki dosyalar ile değiştirildikten sonra ise composer update yapılabilir.
 
@@ -26,11 +25,11 @@ Modülün yüklenmesinin ardından kullanıcı ve yönetici panellerinin çalı�
 
 Modül tabloları için migrate kodu:
 
-php yii migrate --migrationPath=@vendor/kouosl/portal-yemekhane/migrations --interactive=0
+    php yii migrate --migrationPath=@vendor/kouosl/portal-yemekhane/migrations --interactive=0
 
 Yüklenen tabloları ve foreign keyleri silmek için kullanılan migrate kodu:
 
-php yii migrate/down --migrationPath=@vendor/kouosl/portal-yemekhane/migrations --interactive=0
+    php yii migrate/down --migrationPath=@vendor/kouosl/portal-yemekhane/migrations --interactive=0
 
 Yukarıdaki gibi belirtilmiştir. Bunun dışında başlamadan önce /phpmyadmin urlsinden foods tablosuna test için kayıt oluşturabilirsiniz. 
 Sistemde bulunan ve kayıt olan tüm kullanıcılar admin sayılmaktadır.
@@ -68,4 +67,6 @@ https://user-images.githubusercontent.com/35110958/50739649-6ecafd00-11f4-11e9-9
     
 -  Burada ki Admin panelimizde ise yemek ekleme,düzenleme,silme,değiştirme gibi seçeneklerimiz sayesinde düzenlemeler yapabiliriz.
 -   Modül için theme kısmında değişiklikler yapılmıştır.İçerisine Css kodu eklenmiştir.
+
+
 
