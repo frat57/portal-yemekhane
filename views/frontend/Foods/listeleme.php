@@ -3,6 +3,7 @@ use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use kouosl\theme\widgets\Portlet;
 use kouosl\yemekhane\models\Foods;
+use kouosl\yemekhane\Module;
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\YemeklistSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
@@ -39,9 +40,13 @@ $this->params['breadcrumbs'][] = $this->title;
 	
 	<body>
 		<div class="wrapper">
-			<h1>
-				Yemek Listesi
-			</h1>
+			<h1><?php
+				$lang = yii::$app->session->get('lang');
+        			\Yii::$app->language = $lang;
+        			yii::$app->session->set('lang',$lang);
+        			\Yii::$app->language = 'tr-TR'; // /iletisim sayfası default olarak kendini en-US ayarladığı için tr'yi belirtmek zorunda kaldım. Çeviri özelliği çalışıyor. Module.php ayarları yapıldı.
+                    echo Module::t('Foods','Yemekler');
+			?></h1>
 			
 			<div style="clear: both">   
 		    		<h3>Çorbalar </h3>

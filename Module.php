@@ -59,12 +59,14 @@ class Module extends \kouosl\base\Module
     public function registerTranslations()
     {
         Yii::$app->i18n->translations['site/*'] = [
+            Yii::$app->i18n->translations['yemekhane/*'] =[
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
             'basePath' => '@kouosl/yemekhane/messages',
             'fileMap' => [
                 'yemekhane/yemekhane' => 'yemekhane.php',
             ],
+        ],
         ];
     }
 
