@@ -9,6 +9,7 @@ use kouosl\yemekhane\views\frontend\checkboxlist;
 $this->title = 'Yemek  Listesi';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
 <div class="foods-index">
 
     <h1><?= Html::encode($this->title) ?></h1>

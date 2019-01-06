@@ -3,9 +3,7 @@ namespace kouosl\yemekhane\models;
 use Yii;
 use yii\base\Model;
 use kouosl\user\models\User;
-/**
- * Login form
- */
+
 class LoginForm extends Model
 {
     public $username;
@@ -63,7 +61,7 @@ class LoginForm extends Model
      */
     protected function getUser()
     {
-        if ($this->_user === null) {
+        if ($this->_user === false) {
             $this->_user = User::findByUsername($this->username);
         }
         return $this->_user;

@@ -10,7 +10,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="site-index">
-	 
 		<h1>Kullanici Paneli</h1>
 		<br/>
 		<p><a class="btn btn-lg btn-success" href="/yemekhane/foods/listeleme">Kullanici Girisi</a>
