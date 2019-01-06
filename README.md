@@ -1,3 +1,4 @@
+
 # portal-yemekhane
 
 ## [](https://github.com/frat57/portal-yemekhane#kurulum)Kurulum
@@ -53,20 +54,16 @@ https://user-images.githubusercontent.com/35110958/50739569-82299880-11f3-11e9-9
 -   Sayfa açıldıktan sonra bugünün tarihindeki yemek listesi  yukarıdaki şekilde görülür.
     
 -   Üst kısımdaki navbardan ya da verilen linkten admin sayfasına girebilir.  
-    [Admin/yemekhane](http://portal.kouosl/admin/yemekhane)  ![ad](https://user-images.githubusercontent.com/35110958/50739649-6ecafd00-11f4-11e9-97e3-a53a7c748667.PNG)
-https://user-images.githubusercontent.com/35110958/50739649-6ecafd00-11f4-11e9-97e3-a53a7c748667.PNG
--   Eğer Kullanıcı girişi yapılmamışsa direk yönlendirme bu şekildedir. Verilen linkten login sayfasına girebilir.  ![login](https://user-images.githubusercontent.com/35110958/50739694-c6696880-11f4-11e9-8e63-750b9e932703.PNG)
-
-    https://user-images.githubusercontent.com/35110958/50739694-c6696880-11f4-11e9-8e63-750b9e932703.PNG
+    [Admin/yemekhane](http://portal.kouosl/admin/yemekhane)  ![ekran alintisi](https://user-images.githubusercontent.com/35110958/50739950-febe7600-11f7-11e9-9e93-4dc5903b9b23.PNG)
+ https://user-images.githubusercontent.com/35110958/50739950-febe7600-11f7-11e9-9e93-   	4dc5903b9b23.PNG
+-   Eğer Kullanıcı girişi yapılmamışsa direk yönlendirme bu şekildedir. Verilen linkten login sayfasına girebilir.  ![girisekrani](https://user-images.githubusercontent.com/35110958/50739959-3e855d80-11f8-11e9-825c-98a716a7ab96.PNG)
+    https://user-images.githubusercontent.com/35110958/50739959-3e855d80-11f8-11e9-825c-98a716a7ab96.PNG
     
 - Giriş yapıldıktan sonra ki Admin panelimiz CRUD sayesinde oluşturulmuştur içerisinde düzenlemeler yapılmıştır.
 
--  Aşağıdaki Linkten Admin menüsüne ulaşılabilir
-    [Admin/yemekhane/foods](http://portal.kouosl/admin/yemekhane/foods)  ![admin](https://user-images.githubusercontent.com/35110958/50739744-73dc7c00-11f5-11e9-9a51-cba3ce5fe10f.PNG)
+-  Aşağıdaki Linkten Admin menüsüne ulaşılabilir.
+    [Admin/yemekhane/foods](http://portal.kouosl/admin/yemekhane/foods)  ![admin](https://user-images.githubusercontent.com/35110958/50739977-9754f600-11f8-11e9-8e78-bcc537d6ae04.PNG)
 
     
 -  Burada ki Admin panelimizde ise yemek ekleme,düzenleme,silme,değiştirme gibi seçeneklerimiz sayesinde düzenlemeler yapabiliriz.
 -   Modül için theme kısmında değişiklikler yapılmıştır.İçerisine Css kodu eklenmiştir.
-
-
-
