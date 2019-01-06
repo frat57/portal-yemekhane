@@ -137,5 +137,9 @@ class FoodsController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
+    }/*
+    public function actionUpgradesem(){
+        $list = kouosl\models\foods::findBySql('Select name,calorie,carbonhydrate,protein from foods ')->all();
+        return $this->render('checkboxlist',['std' => $list]);
+    }*/
 }

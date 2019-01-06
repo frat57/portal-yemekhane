@@ -75,6 +75,14 @@ public function actions()
     }
     public function actionIndex()
     {
-        return $this->render('_index');
+    	$model =new Foods();
+    	$model->save();
+    	$Foods = Yii::$app->db->createCommand('SELECT * FROM foods')->queryAll();
+    	$FoodsCorba = Yii::$app->db->createCommand('SELECT * FROM foods WHERE type = 0')->queryAll();
+    	$FoodsAnaYemek = Yii::$app->db->createCommand('SELECT * FROM foods WHERE type = 1')->queryAll();
+    	$FoodsTatli = Yii::$app->db->createCommand('SELECT * FROM foods WHERE type = 2')->queryAll();
+
+    //	$date = Yii::$app->db->createCommand('SELECT date_time FROM Listem ')->queryAll();
+        return $this->render('/Foods/listeleme',['Foods' => $Foods,'model' => $model,'FoodsCorba' => $FoodsCorba,'model'=> $model,'FoodsAnaYemek' => $FoodsAnaYemek,'model'=> $model,'FoodsTatli' => $FoodsTatli, 'model' => $model]);
     }
 }
