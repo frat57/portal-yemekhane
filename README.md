@@ -60,7 +60,7 @@ https://user-images.githubusercontent.com/35110958/50739649-6ecafd00-11f4-11e9-9
     https://user-images.githubusercontent.com/35110958/50739694-c6696880-11f4-11e9-8e63-750b9e932703.PNG
     
 - Giriş yapıldıktan sonra ki Admin panelimiz CRUD sayesinde oluşturulmuştur içerisinde düzenlemeler yapılmıştır.
-- 
+
 -  Aşağıdaki Linkten Admin menüsüne ulaşılabilir
     [Admin/yemekhane/foods](http://portal.kouosl/admin/yemekhane/foods)  ![admin](https://user-images.githubusercontent.com/35110958/50739744-73dc7c00-11f5-11e9-9a51-cba3ce5fe10f.PNG)
 
